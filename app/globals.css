@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Navbar */
+.navbar {
+  background: #2fc20a;
+  color: rgb(115, 0, 255);
+  padding: 0.8rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgb(106, 0, 255);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #640aea;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(99, 0, 238);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #335538;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+.footer {
+  background-color: #1e3b1e;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

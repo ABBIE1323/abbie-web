@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container">
         <Link href="/" className="logo">
-          ROBOTICS WEB
+          hello can you hear me
         </Link>
 
         <button

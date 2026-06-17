@@ -9,9 +9,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body className="layout">
          <Navbar/>
-        {children}
+         <div className="main-content">
+             {children}
+        </div>
         <Footer/>
         </body>
     </html>

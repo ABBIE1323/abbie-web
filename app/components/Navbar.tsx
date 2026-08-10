@@ -74,7 +74,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container">
         <Link href="/" className="logo">
-          ROBOT SHOP
+          Punnapat Nuansrichok
         </Link>
 
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

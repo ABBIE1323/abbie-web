@@ -91,12 +91,17 @@ export default function Navbar() {
            <li>
             <Link href="/products">สินค้า</Link>
           </li>
-
+            <li>
+            <Link href="/blogs">บทความ</Link>
+          </li>
           {user && (
             <>
             <li>
               <Link href="/dashboard">Dashboard</Link>
             </li>
+             <li>
+                <Link href="/admin/blogs">เพิ่มblogs</Link>
+              </li>
             <li>
                 <Link href="/admin/categories">เพิ่มหมวดหมู่</Link>
               </li>
